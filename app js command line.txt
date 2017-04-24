@@ -1,0 +1,69 @@
+
+c:\NodeJsTraining\PasswordManager>node app.js --help
+starting password manager
+Commands:
+  create  Create a new account
+  get     Get an existing account
+
+Options:
+  --help  Show help                                                    [boolean]
+
+
+
+c:\NodeJsTraining\PasswordManager>node app.js create --help
+starting password manager
+Options:
+  --name, -n      Account name (eg: Twitter, Facebook)       [string] [required]
+
+  --username, -u  Account username or email                  [string] [required]
+
+  --password, -p  Account password                           [string] [required]
+
+  --help          Show help                                            [boolean]
+
+
+
+c:\NodeJsTraining\PasswordManager>node app.js create -n Facebook -u mbmaha -p ma
+hantesh@1234
+starting password manager
+Account created!
+{ name: 'Facebook',
+  username: 'mbmaha',
+  password: 'mahantesh@1234' }
+
+c:\NodeJsTraining\PasswordManager>node app.js create -n Gmail -u mbmg.ise@gmail.
+com -p mahantesh@12345
+starting password manager
+Account created!
+{ name: 'Gmail',
+  username: 'mbmg.ise@gmail.com',
+  password: 'mahantesh@12345' }
+
+c:\NodeJsTraining\PasswordManager>node app.js get --help
+starting password manager
+Options:
+  --name, -n  Account name (eg: Twitter, Facebook)           [string] [required]
+
+  --help      Show help                                                [boolean]
+
+
+
+c:\NodeJsTraining\PasswordManager>node app.js get -n Facebook
+starting password manager
+Account found!
+{ name: 'Facebook',
+  username: 'mbmaha',
+  password: 'mahantesh@1234' }
+
+c:\NodeJsTraining\PasswordManager>node app.js get -n Gmail
+starting password manager
+Account found!
+{ name: 'Gmail',
+  username: 'mbmg.ise@gmail.com',
+  password: 'mahantesh@12345' }
+
+c:\NodeJsTraining\PasswordManager>node app.js get -n Gmai
+starting password manager
+Account not found
+
+c:\NodeJsTraining\PasswordManager>\
